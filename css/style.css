@@ -5,6 +5,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+header{
+    background-color: #3061E0;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    padding: 2rem;
+    background-color: #23272a;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
 .flex{
     display: flex;
 }
@@ -16,15 +34,49 @@
 }
 
 .container{
-    width: 62.5%;
+    width: 70%;
     margin: 0 auto;
     height: 100%;
 }
 
-.crazy-bordered{
-    border: 2px dashed black;
+.header-link {
+    color: white;
+    text-decoration:none;
+    padding: 0 1.5rem;
 }
 
+.header-link:hover {
+    text-decoration: underline;
+}
+
+p.header-p {
+    font-size: 1.24rem;
+    padding: 30px 0;
+    line-height: 2rem;
+}
+
+button.header-button {
+    border: none;
+    border-radius: 48px;
+    padding: 12px 20px;
+    margin: 0 15px;
+    font-size: 1.15rem;
+}
+
+button.header-button:hover{
+    box-shadow: 1px 2px 3px #bec0c2;
+    color:#1e8ffe;
+}
+button.open-discord {
+    background-color: #23272A;
+    color: white;
+}
+
+button.open-discord:hover{
+    background-color: #23272A;
+    box-shadow:  1px 2px 3px #bec0c2;
+    color: #fff;
+}
 
 .col{
     height: 480px;
@@ -46,46 +98,33 @@
 }
 
 
-header{
-    background-color: #add8e6;
-    align-items: center;
-    /* height: 80px; */
-    flex-direction: column;
-}
+
 
 main section {
     height: 600px;
-    /* background-color: aqua; */
 }
 
-footer{
-    background-color: #23272a;
-}
 
 main section.king {
     height: 900px;
-    /* background-color: aqua; */
 }
 
 
 nav.header-top{
     height: 45px;
     margin: 1rem;
-    /* line-height: 40px; */
 }
 
 nav div.logo,
 nav div.login{
     flex-basis: 20%;
-    /* width: 20%; */
-    background-color: orange;
     padding:.75rem;
+
 
 }
 
 nav ul.main-menu{
     flex-basis: 80%;
-    background-color: orange;
     padding:.75rem;
     text-align: center;
 }
@@ -99,10 +138,6 @@ div.big-content{
     background-color: #228a22;
     height: 800px;
     width: 100%;
-}
-
-footer{
-    padding: 2rem;
 }
 
 footer section.footer-top{
@@ -126,7 +161,6 @@ footer section.footer-top nav{
 footer .footer-top nav ul{
     width: 25%;
     height: 100%;
-    border: 2px dashed white;
 }
 
 footer hr{
@@ -147,17 +181,30 @@ footer .footer-button{
 }
 
 
+#login-button {
+    border: none;
+    border-radius: .8rem;
+    padding: .4rem;
+    transition-duration: 0.4s;
+}
+
+#login-button:hover {
+    color: #1e8ffe;
+}
+
 
 div#jumbotron{
-    background-color: #00008a;
-    height: 450px;
+    background-image: url(img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 545px;
     width: 100%;
 }
 
 div#jumbotron .jumbo-content{
-    width: 45%;
-    height: 350px;
-    background-color: #ed81ed;
+    flex-basis: 45%;
+    height: 335px;
+    text-align: center;
+    color: white;
 }
-
 
